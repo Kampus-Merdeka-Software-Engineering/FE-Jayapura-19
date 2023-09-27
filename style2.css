@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500;1,600&display=swap');
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "poppins", sans-serif;
+}
+:root {
+	--yellow: #FFBD13;
+	--blue: #4383FF;
+	--yellow-d-1: hsl(40, 93%, 70%);
+	--light: #F5F5F5;
+	--grey: #AAA;
+	--white: #FFF;
+	--shadow: 8px 8px 30px rgba(0,0,0,.05);
+}
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    font-family: "poppins", sans-serif;
+    color: #dc6c3a;
+}
+.menu{
+    float: right;
+}
+nav{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #f3eded;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+/* MENU HOME */
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+img{
+    width: 40%;
+    height: 40%;
+    padding: 5px;
+}
+.kolom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2 {
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #000000;
+    width: 100%;
+    line-height: 10px;
+    padding: 10px;
+}
+
+.container{
+    background-color: #ffffff;
+}
+/* HOME CEK RESI */
+.cek{
+    background-color: #ffffff;
+    border: 1px solid #dc6c3a;
+    padding: 20px ;
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+h3{
+    line-height: 20px;
+    color: #dc6c3a;
+}
+.cek ul{
+    margin: 10px 0;}
+/* .cek ul li:where (input, select){
+
+    } */
+.cek ul li{
+    margin: auto;
+    display:flex;
+    line-height: 50px;
+    padding: 4px;
+    border-radius: 2px;
+    border: 1px;
+}
+.cek ul :where(li:first-child, input){
+    width: 100%;
+}
+.cek ul li:last-child{
+    margin-left: 100%px;
+}
+.cek button.track{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: var(--yellow-d-1);
+	color: var(--white);
+    border-radius: 20px;
+    padding: 2px;
+    margin: 8px;
+
+} 
+.cek button:hover{
+    background: var(--yellow);
+}
+
+/* Tentang/about */
+p{
+    padding: 10px;
+    text-align: justify;
+}
+/* .halaman .tentang p::before{
+    content: "/f105";
+    font-family: "Font Awesome 5 Free";
+} */
+/* .tentang img{
+    width: 100%;
+    padding: 5px; */
+
+
+/* our team */
+
+.grid-container{
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    background-color: white;
+    padding: 10px 80px 40px 80px; /*top right bottom left padding*/
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.grid-item{
+    background-color: #dc6c3a;
+    border: 3px;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+.grid-item:hover{
+    background-color: #fec98f;
+    transform: scale(1.1);
+    
+}
+
+.grid-item img{
+    border-radius: 5px;
+    /* responsive */
+    max-width: 100%;
+    height: auto;
+    /* center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.desc{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.button{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #ffa071;
+    padding: 5px 20px;
+}
+
+/* mobile */
+/* @media screen and (max-width: 991.98px){
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* tablet */
+/* @media screen and (min-width:481px) and (max-width: 768px){
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}  */
+
+
+ /* komentar */
+
+.komentar{
+	background: var(--white);
+	padding: 2rem;
+	max-width: 576px;
+	width: 100%;
+	border-radius: .75rem;
+	box-shadow: var(--shadow);
+	align-items: center;
+}
+
+.kolom .komentar h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+textarea {
+	width: 90%;
+	background: var(--light);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+}
+.komentar .btn-group {
+	display: flex;
+	grid-gap: .5rem;
+}
+.btn-group .btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+.btn-group .btn.submit {
+	background: var(--yellow-d-1);
+	color: var(--white);
+}
+.btn-group .btn.submit:hover {
+	background: var(--yellow);
+}
+.btn-group .btn.cancel {
+	background: var(--white);
+	color: var(--yellow);
+}
+.btn-group .btn.cancel:hover {
+	background: var(--light);
+}
+/* partners */
+.tengah{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+}
+.partner-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.kartu-partner{
+    width: 20%;
+    margin: 0 auto;
+}
+.kartu-partner img{
+    width: 100px;
+    height: auto;
+    border-radius: 20%;
+    padding: 20px;
+    align-content: center;
+}
+.gambar2 {
+    margin: 0 auto;
+    align-content: center;
+    display: flex;
+}
+/* footer */
+.footer1{
+    background-color: rgb(38, 17, 132);
+    color: #fff;
+    padding: 3px;
+}
+.footer1 p{
+    text-align: center;
+}
+
+/* responsif */
+@media screen and (max-width: 991.98px){
+    .wrapper {
+        width: 100%;
+    }
+    .logo a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav .menu{
+        width: 100%;
+        margin: 0;
+    }
+    nav .menu ul{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+    nav .menu ul li{
+        display: inline-block;
+        float: none;
+    }
+    section{
+        display: block;
+    }
+    section img{
+        display: block ;
+    }
+    .kartu-partner img{
+        width: 50%;
+    }
+    .grid-item{
+        width: 80%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1.1fr);
+    }
+    .grid-container{
+        grid-template-columns: repeat(2.1fr);
+    }
+
+    
+}
