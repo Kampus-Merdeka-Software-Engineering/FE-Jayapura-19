@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
+    <title>Cek Resi</title>
 </head>
 <body>
-    
+    <nav class="navbar flex">
+        <h3>Cek.R</h3>
+        <div class="mobile-menu"></div>
+        <ul class="list-menu flex">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper"> 
+        <section id="home">
+
+        </section>
+    </div>
+    <section class="resi">
+        <div>
+            <h2>Cek.R</h2> 
+            <p>Cek.R menyediakan cara termudah untuk melacak resi secara cepat dan akurat</p> 
+        </div>
+       <img src="https://img.freepik.com/free-vector/cash-delivery-concept_52683-51829.jpg?size=626&ext=jpg&ga=GA1.2.1463423359.1663904055&semt=ais"/>
+    </section>  
+<section class="cekresi">
+<div class="container">
+    <h3 align="center">Cek Lokasi <span>Paketmu</span></h3>
+<form action="#" method="get">
+    <ul class="flex">
+        <li>
+            <input 
+            type="text"
+            id="resi"
+            name="resi"
+            maxlength="17"
+            placeholder="Masukan nomor resi"
+            pattern="[A-za-z0-9]+"/>
+        </li>
+        <li> <select name="expedisi" id="expedisi">
+            <option value="Pilih layanan">Pilih layanan</option>
+            <option value="JNE">JNE</option>
+            <option value="J&T Ekspress">J&T Ekspress</option>
+            <option value="Pos Indonesia">Pos Indonesia</option>
+            <option value="TIKI">TIKI</option>
+            <option value="SiCepat">SiCepat</option>
+            <option value="Ninja Express">Ninja Express</option>
+            <option value="Indah Logistik">Indah Logistik</option>
+        </select></li>
+    </ul>
+    <button type="submit" class="btn track" disabled>LACAK</button>
+</form>
+</div>
+<div class="detail-container">
+    <h3 class="detail-section">Lacak Pengiriman</h3>
+    <div class="body-card flex">
+        <div id="sumary">
+            <table>
+                <tr>
+                    <td>No Resi</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pengiriman</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Penerima</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="flex body-card display-false">
+            <img src="4.JPG" alt="gambar"/>
+            <p>Silahkan isi form untuk mengetahui status pengiriman</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="tentang" id="tentang">
+    <h3 class="title-section">Tentang Kami</h3>
+    <div class="text-container">
+        <p>Layanan kami memudahkan pengirim dan penerima paket untuk mengetahui status resi atau keberadaan paket yang sedang dikirim. Setiap hari ratusan ribu nomor resi dari berbagai kurir di</p>
+        <p>Status lacak pengirim termudah dan tercepat</p>
+        <p>Stok banyak kurir ekspedisi</p>
+        <p>Segala data informasi mengenai status pengiriman paket barang anda adalah akurat diambil dari masing-masing web ekspedisi</p>
+    </div>
+</section>
+<footer class="main-footer" id="footer">
+    <div class="footer-top flex"></div>
+    <div class="footer-cc">
+        <p>Copyrights © 2023 Cek.R by MSIB Revou participant August 2023 batch from Jayapura  team J19</p>
+    </div>
+</footer>
 </body>
 </html>
