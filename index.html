@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Capstone Project J19</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
         <div class="wrapper">
             <div class="logo"> <a href="Logo2.png">Cek.eЯ</a></div>
-            <div class="menu">
+            <i class="fa fa-bars icon-menu" onclick="hendleClick(event)"></i>
+            <div class="menu hide-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
                     <li><a href="#comment">Comment</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#our team">Our team</a></li>
                     <li><a href="#partners">Partners</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+<!-- HOME -->
     <div class="halaman">
         <section id="home">
-            <img src="messenger-concept-illustration_114360-6564.avif"/>
+            <img id="home-img" src="assets/messenger-concept-illustration_114360-6564.avif"/>
             <div class="kolom">
                 <h2>Cek Resi Paketmu</h2>
                 <p> <b style="color:  #dc6c3a;">Cek.eЯ</b> merupakan suatu layanan berbasis website yang menyediakan cara termudah untuk melacak resi secara cepat dan akurat. Segala data informasi mengenai status pengiriman paket barang anda adalah akurat diambil dari masing-masing web ekspedisi</p>
@@ -74,21 +77,7 @@
             </div>
             </div>
         </section>
-        <section id="about">
-            <div class="tengah">
-                <div class="kolom">
-                    <div class="about1">
-                        <div class="about2">
-                            <h2>Tentang Kami</h2>
-                            <p>Cek.eЯ adalah suatu layanan berbasis website yang menyediakan cara termudah untuk melacak resi secara cepat dan akurat. Segala data informasi mengenai status pengiriman paket barang anda adalah akurat diambil dari masing-masing web ekspedisi.</p>
-                            <p>Keunggulan yang ditawarkan Cek.eЯ yaitu memberikan status pelacakan resi yang cepat. Cukup input nomor resi anda, maka anda langsung mengetahui status paket anda yang sedang dikirim.</p>
-                            <p>Cek.eЯ merupakan hasil dari capstone projek software engineering. Di kerjakan oleh peserta MSIB batch 5 yang sedang mengikuti study independen di Revou batch Agustus 2023, Kelompok Jayapura  J19 terdiri dari 5 mahasiswa dan berasal dari perguruan tinggi yang berbeda di Indonesia.</p>
-                        </div>
-                        <img src="about2.avif" alt="gambar about">
-                    </div> 
-                </div>
-             </div>
-        </section>
+
  <!-- COMMENT -->
  <section id="comment">
     <div class="tengah">
@@ -107,7 +96,19 @@
     </div>
     </div>
 </section>
-        <!-- OUR TEAM -->
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about1">
+        <h2>Tentang Kami</h2>
+        <p>Cek.eЯ adalah suatu layanan berbasis website yang menyediakan cara termudah untuk melacak resi secara cepat dan akurat. Segala data informasi mengenai status pengiriman paket barang anda adalah akurat diambil dari masing-masing web ekspedisi.</p>
+        <p>Keunggulan yang ditawarkan Cek.eЯ yaitu memberikan status pelacakan resi yang cepat. Cukup input nomor resi anda, maka anda langsung mengetahui status paket anda yang sedang dikirim.</p>
+        <p>Cek.eЯ merupakan hasil dari capstone projek software engineering. Di kerjakan oleh peserta MSIB batch 5 yang sedang mengikuti study independen di Revou batch Agustus 2023, Kelompok Jayapura  J19 terdiri dari 5 mahasiswa dan berasal dari perguruan tinggi yang berbeda di Indonesia.</p>
+    </div>
+    <img src="assets/about2.avif"  id="about-img" alt="gambar about">
+</section>
+
+<!-- OUR TEAM -->
         <section id="our team">
             <div class="tengah">
             <div class="kolom">
@@ -117,7 +118,7 @@
                 <div class="grid-container">
                     <div class="grid-item">
                         <div class="desc">
-                            <img src="adel.png">
+                            <img src="assets/adel.png">
                             <h3>Adelia Salsabila</h3>
                             <a href="https://wa.me/6282138170595">
                                 <button class="button">Contact</button>
@@ -125,9 +126,8 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <!-- <h2>Tim Kami</h2> -->
                         <div class="desc">
-                            <img src="balqist.png">
+                            <img src="assets/balqist.png">
                             <h3>Farah Balqist</h3>
                             <a href="https://wa.me/628999665564">
                                 <button class="button">Contact</button>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="grid-item">
                         <div class="desc">
-                            <img src="mahadma.png">
+                            <img src="assets/mahadma.png">
                             <h3>Mahadma Hutagalung</h3>
                             <a href="https://wa.me/6281396204464">
                                 <button class="button">Contact</button>
@@ -145,7 +145,7 @@
                     </div>
                     <div class="grid-item">
                         <div class="desc">
-                            <img src="fadli.png">
+                            <img src="assets/fadli.png">
                             <h3>Muhammad Fadli Al-Thariq</h3>
                             <a href="https://wa.me/62895631428538">
                                 <button class="button">Contact</button>
@@ -154,7 +154,7 @@
                     </div>
                     <div class="grid-item">
                         <div class="desc">
-                            <img src="zainudin.png" width="50px" height="50px">
+                            <img src="assets/zainudin.png" width="50px" height="50px">
                             <h3>Zainudin Kairoty</h3>
                             <a href="https://wa.me/6282214603845">
                                 <button class="button">Contact</button>
@@ -167,7 +167,7 @@
             </div>
         </section>
 
-       <!-- PARTNERS -->
+<!-- PARTNERS -->
         <section id="partners">
             <div class="tengah">
                 <div class="kolom">
@@ -175,39 +175,40 @@
                 </div>
                 <div class="gambar1">
                         <div class="kartu-partner">
-                            <img src="UNPATTI.png" alt="unpatti">
+                            <img src="assets/UNPATTI.png" alt="unpatti">
                         </div>
                         <div class="kartu-partner">
-                            <img src="UMS.png" alt="ums">
+                            <img src="assets/UMS.png" alt="ums">
                         </div>
                         <div class="kartu-partner">
-                            <img src="MIKROSKIL.png" alt="mikroskil">
+                            <img src="assets/MIKROSKIL.png" alt="mikroskil">
                         </div>
                         <div class="kartu-partner">
-                            <img src="UPI.png" alt="upi">
+                            <img src="assets/UPI.png" alt="upi">
                         </div>
                         <div class="kartu-partner">
-                            <img src="UPN.png" alt="upn">
+                            <img src="assets/UPN.png" alt="upn">
                         </div>
                         <div class="kartu-partner">
-                            <img src="KM.png" alt="KM">
+                            <img src="assets/KM.png" alt="KM">
                         </div>
                         <div class="kartu-partner">
-                            <img src="MSIB.jpg" alt="MSIB">
+                            <img src="assets/MSIB.jpg" alt="MSIB">
                         </div>
                         <div class="kartu-partner">
-                            <img src="REVOU.jpg" alt="Revou">
+                            <img src="assets/REVOU.jpg" alt="Revou">
                         </div>
                 </div>
             </div>
-            </div>
         </section>
     </div>
+
+<!-- FOOTER -->
     <footer class="main-footer" id="footer">
         <div class="footer-top flex">
             <div class="content flex" id="content-footer">
                 <div class="footer1">
-                        <img src="Logo2.png" alt="logo">
+                        <img src="assets/Logo2.png" alt="logo">
                         <p>Copyrights © 2023 Cek.eЯ by MSIB Revou participant August 2023 batch from Jayapura  team J19</p>
                         <a href="#"><i class="fa-solid fa-email"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -217,6 +218,6 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
