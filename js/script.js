@@ -1,3 +1,11 @@
+// BAR MENU
+function hendleClick(event){
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("hide-menu");
+    menu.classList.toggle("show-menu");
+
+}
+
 // INPUT RESI
 function cekResi(event) {
     const input = document.querySelector("#resi");
@@ -6,29 +14,36 @@ function cekResi(event) {
 
 }
 
-// BAR MENU
-function hendleClick(event){
-    const menu = document.querySelector(".menu");
-    menu.classList.toggle("hide-menu");
-    menu.classList.toggle("show-menu");
-
-}
 // SUBMIT KOMENTAR
-function submitComment(event) {
-    event.preventDefault();
 
-    const opinionTextarea = document.getElementById("opinion-textarea");
-    const commentsList = document.getElementById("comments-list");
+document.addEventListener("DOMContentLoaded", function () {
+    const commentForm = document.getElementById("comment-form");
+    const commentList = document.getElementById("comment-list");
 
-    const opinion = opinionTextarea.value;
-    if (opinion.trim() !== "") {
-        const commentItem = document.createElement("li");
-        commentItem.textContent = opinion;
-        commentsList.appendChild(commentItem);
-        opinionTextarea.value = "";
+    commentForm.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-        // Tambahkan komentar ke bagian bawah form
-        const commentSection = document.getElementById("comment-section");
-        commentSection.appendChild(commentItem);
-    }
-}
+        const nameInput = document.getElementById("name");
+        const commentInput = document.getElementById("comment");
+
+        const name = nameInput.value;
+        const comment = commentInput.value;
+
+        if (name && comment) {
+            const commentItem = document.createElement("div");
+            commentItem.classList.add("comment-item");
+            commentItem.innerHTML = `
+                <strong>${name}:</strong>
+                <p>${comment}</p>
+            `;
+
+            commentList.appendChild(commentItem);
+
+            // Reset input nama dan komentar
+            nameInput.value = "";
+            commentInput.value = "";
+        } else {
+            alert("Nama dan komentar harus diisi!");
+        }
+    });
+});

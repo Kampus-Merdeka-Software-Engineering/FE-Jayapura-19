@@ -80,29 +80,19 @@
 
  <!-- COMMENT -->
  <section id="comment">
-    <div class="tengah">
-    <div class="kolom">
+    <div class="container">
         <h2>Komentar</h2>
         <div class="komentar">
             <h3>Give Your Opinion About This Site</h3>
-            <form action="#" onsubmit="submitComment(event)">
-                <textarea name="opinion" cols="30" rows="5" placeholder="Give Your Thought" id="opinion-textarea"></textarea>
-                <div class="btn-group">
-                    <button type="submit" class="btn submit">Submit</button>
-                    <button type="button" class="btn cancel" id="cancel-button">Cancel</button>
-                </div>
-            </form>
-        
-            <section>
-                <div class="comments">
-                    <h3>Comments:</h3>
-                    <ul id="comments-list">
-                        <!-- Komentar yang sudah disubmit akan ditampilkan di sini -->
-                    </ul>
-                </div>
-            </section>
+            <form id="comment-form">
+                <input type="text" id="name" placeholder="Nama">
+                <textarea id="comment" placeholder="Komentar"></textarea>
+                <button type="submit" id="submit-button" onsubmit="submitComment(event)">Kirim Komentar</button>
+            </form>  
+            <div id="comment-list">
+                <!-- Daftar komentar akan ditampilkan di sini -->
+            </div>          
         </div>
-    </div>
     </div>
 </section>
 

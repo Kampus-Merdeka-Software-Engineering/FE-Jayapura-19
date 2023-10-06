@@ -146,58 +146,56 @@ h3{
 
 /* komentar */
 
-.komentar{
-	background: var(--white);
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.komentar {
+    margin-top: 20px;
+    background: var(--white);
 	padding: 2rem;
 	max-width: 576px;
 	border-radius: .75rem;
 	box-shadow: var(--shadow);
-	margin: auto;
+}
+.komentar h3{
+    padding: 20px;
 }
 
-.kolom .komentar h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-	margin-bottom: 1rem;
+#comment-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: scroll;
 }
 
-textarea {
-	width: 90%;
-	background: var(--light);
-	padding: 1rem;
-	border-radius: .5rem;
-	border: none;
-	outline: none;
-	resize: none;
-	margin-bottom: .5rem;
+#comment-form input,
+#comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-.komentar .btn-group {
-	display: flex;
-	grid-gap: .5rem;
+#comment-form button {
+    margin: 20px;
 }
-.btn-group .btn {
-	padding: .75rem 1rem;
-	border-radius: .5rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	font-size: .875rem;
-	font-weight: 500;
-}
-.btn-group .btn.submit {
-	background: var(--yellow-d-1);
+
+#submit-button {
+    background: var(--yellow-d-1);
 	color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
-.btn-group .btn.submit:hover {
-	background: var(--yellow);
+
+#submit-button:hover {
+    background: var(--yellow);
 }
-.btn-group .btn.cancel {
-	background: var(--white);
-	color: var(--yellow);
-}
-.btn-group .btn.cancel:hover {
-	background: var(--light);
-}
+
 
 /* Tentang/about */
 p{
