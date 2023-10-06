@@ -146,6 +146,59 @@ h3{
 
 /* komentar */
 
+/* .komentar{
+	background: var(--white);
+	padding: 2rem;
+	max-width: 576px;
+	border-radius: .75rem;
+	box-shadow: var(--shadow);
+	margin: auto;
+}
+
+.kolom .komentar h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+textarea {
+	width: 90%;
+	background: var(--light);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+}
+.komentar .btn-group {
+	display: flex;
+	grid-gap: .5rem;
+}
+.btn-group .btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+.btn-group .btn.submit {
+	background: var(--yellow-d-1);
+	color: var(--white);
+}
+.btn-group .btn.submit:hover {
+	background: var(--yellow);
+}
+.btn-group .btn.cancel {
+	background: var(--white);
+	color: var(--yellow);
+}
+.btn-group .btn.cancel:hover {
+	background: var(--light);
+} */
+
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -202,10 +255,11 @@ p{
     padding: 10px;
     text-align: justify;
 }
-.about{
+.about1{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 20px;
 }
 /* our team */
 
