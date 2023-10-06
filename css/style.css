@@ -207,7 +207,7 @@ textarea {
     
 }
 
-.komentar {
+.comment {
     margin-top: 20px;
     background: var(--white);
 	padding: 2rem;
@@ -215,7 +215,7 @@ textarea {
 	border-radius: .75rem;
 	box-shadow: var(--shadow);
 }
-.komentar h3{
+.comment h3{
     padding: 20px;
 }
 
