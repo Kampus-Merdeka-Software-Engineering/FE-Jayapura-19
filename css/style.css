@@ -3,6 +3,7 @@
     text-decoration: none;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0px;
