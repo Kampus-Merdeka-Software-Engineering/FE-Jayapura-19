@@ -8,16 +8,27 @@ function hendleClick(event){
 
 // INPUT RESI
 const BASE_URL = "https://be-jayapura-19-production.up.railway.app";
-function cekResi(){
+
+function cekResi(event) {
+    event.preventDefault(); 
+
     const inputResi = document.querySelector("#resi");
-    fetch('${BASE_URL}/get-paket-by-resi?resi=${inputResi.value}')
-    .then((response) => response.json())
-    .then((response) => {
-        console.log(response);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+    const trackingNumber = inputResi.value.trim(); 
+
+    if (!trackingNumber) {
+        // Memeriksa apakah input kosong
+        alert("Please enter a tracking number."); // Menampilkan alert jika input kosong
+        return;
+    }
+
+    fetch(`${BASE_URL}/get-paket-by-resi?resi=${trackingNumber}`)
+        .then((response) => response.json())
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
 }
 
 // SUBMIT KOMENTAR
