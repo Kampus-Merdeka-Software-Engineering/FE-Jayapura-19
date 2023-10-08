@@ -7,11 +7,17 @@ function hendleClick(event){
 }
 
 // INPUT RESI
-function cekResi(event) {
-    const input = document.querySelector("#resi");
-    const value = input.value;
-    console.log(value);
-
+const BASE_URL = "https://be-jayapura-19-production.up.railway.app";
+function cekResi(){
+    const inputResi = document.querySelector("#resi");
+    fetch('${BASE_URL}/get-paket-by-resi?resi=${inputResi.value}')
+    .then((response) => response.json())
+    .then((response) => {
+        console.log(response);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
 }
 
 // SUBMIT KOMENTAR
@@ -47,3 +53,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
