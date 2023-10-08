@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             nameInput.value = "";
             commentInput.value = "";
         } else {
-            alert("Nama dan komentar harus diisi!");
+            alert("Name and comment must be filled in!");
         }
     });
 });
