@@ -1,181 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Capstone Project J19</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"> <a href="Logo2.png">Cek.eЯ</a></div>
-            <i class="fa fa-bars icon-menu" onclick="hendleClick(event)"></i>
-            <div class="menu hide-menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#comments">Comment</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#our team">Our team</a></li>
-                    <li><a href="#partners">Partners</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Capstone Project J19</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="Logo2.png">Cek.eЯ</a>
+                </div>
+                <i class="fa fa-bars icon-menu" onclick="hendleClick(event)"></i>
+                <div class="menu hide-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#comments">Comment</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#our team">Our team</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-<!-- HOME -->
-    <div class="halaman">
-        <section id="home">
-            <img id="home-img" src="./img/messenger-concept-illustration_114360-6564.avif"/>
-            <div class="kolom">
-                <h2>Track Your Package</h2>
-                <p> <b style="color:  #dc6c3a;">Cek.eЯ</b> is a web-based service that provides the easiest way to track shipments quickly 
-                    and accurately. All information data regarding the status of your package delivery is accurately retrieved from each 
-                    expedition website.</p>
-                <div class="cek">
-                    <h3 align="center">Track Your Package</h3>
+        <!-- HOME -->
+        <div class="halaman">
+            <section id="home">
+                <img id="home-img" src="./img/messenger-concept-illustration_114360-6564.avif"/>
+                <div class="kolom">
+                    <h2>Track Your Package</h2>
+                    <p>
+                        <b style="color:  #dc6c3a;">Cek.eЯ</b>
+                        is a web-based service that provides the easiest way to track shipments quickly 
+                                            and accurately. All information data regarding the status of your package delivery is accurately retrieved from each 
+                                            expedition website.</p>
+                    <div class="cek">
+                        <h3 align="center">Track Your Package</h3>
                         <ul class="flex">
                             <li>
-                                <input 
-                                type="text"
-                                id="resi"
-                                name="resi"
-                                maxlength="17"
-                                placeholder="Enter Tracking Number to track your package."
-                                pattern="[A-za-z0-9]+"/>
+                                <input type="text" id="resi" name="resi" maxlength="17" placeholder="Enter Tracking Number to track your package." pattern="[A-za-z0-9]+"/>
                             </li>
                         </ul>
-                    <button type="submit" class="btn track" onclick="cekResi(event)"> TRACK </button>
-            </div>
-            <div class="detail-container">
-                <h3 class="detail-section">Information Tracking Number</h3>
-                <div class="body-card flex">
-                    <div id="sumary">
-                        <table>
-                            <tr>
-                                <td>Tracking Number</td>
-                                <td>:</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Delivery Date</td>
-                                <td>:</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Recipient</td>
-                                <td>:</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Status</td>
-                                <td>:</td>
-                                <td></td>
-                            </tr>
-                        </table>
+                        <button type="submit" class="btn track" onclick="cekResi(event)">
+                            TRACK
+                        </button>
+                    </div>
+                    <div class="detail-container">
+                        <h3 class="detail-section">Information Tracking Number</h3>
+                        <div class="body-card flex">
+                            <div id="sumary">
+                                <table>
+                                    <tr>
+                                        <td>Tracking Number</td>
+                                        <td>:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delivery Date</td>
+                                        <td>:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Recipient</td>
+                                        <td>:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Status</td>
+                                        <td>:</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
-<section id="comments">
-    <div class="container">
-        <h2>Comment</h2>
-        <div class="comment">
-            <h3>Give Your Opinion About This Site</h3>
-            <form id="comment-form">
-                <input type="text" id="name" placeholder="Name">
-                <textarea id="comment" placeholder="Comments"></textarea>
-                <button type="submit" id="submit-button" onsubmit="submitComment(event)">Send Comment</button>
-            </form>  
-            <div id="comment-list">
-                <!-- Daftar komentar akan ditampilkan di sini -->
-            </div>          
-        </div>
-    </div>
-</section>
-<!-- ABOUT -->
-<section id="about">
-    <div class="about1">
-        <h2>About Us</h2>
-        <p>Cek.eЯ is a web-based service that provides the easiest way to track shipments quickly and accurately. 
-            All information data regarding the status of your package delivery is accurately retrieved from each expedition website.</p>
-        <p>The advantage offered by Cek.eЯ is providing fast tracking status. Simply input your tracking number, and you will immediately 
-            know the status of your package being shipped.</p>
-        <p>Cek.eЯ is the result of a software engineering capstone project. It was developed by participants of the MSIB batch 5 
-            who were undertaking independent studies in the Revou batch of August 2023. The Jayapura J19 group consists of 5 students 
-            from different universities in Indonesia.</p>
-    </div>
-    <img src="./img/about2.avif"  id="about-img" alt="gambar about">
-</section>
+            </section>
+            <!--Comments-->
+            <section id="comments">
+                <div class="container">
+                    <h2>Comment</h2>
+                    <div class="comment">
+                        <h3>Give Your Opinion About This Site</h3>
+                        <form id="comment-form">
+                            <input type="text" id="name" placeholder="Name">
+                            <textarea id="comment" placeholder="Comments"></textarea>
+                            <button type="submit" id="submit-button" onsubmit="submitComment(event)">Send Comment</button>
+                        </form>  
+                        <div id="comment-list">
+                            <!-- Daftar komentar akan ditampilkan di sini -->
+                        </div>          
+                    </div>
+                </div>
+            </section>
+            <!-- ABOUT -->
+            <section id="about">
+                <div class="about1">
+                    <h2>About Us</h2>
+                    <p>Cek.eЯ is a web-based service that provides the easiest way to track shipments quickly and accurately. 
+                                    All information data regarding the status of your package delivery is accurately retrieved from each expedition website.</p>
+                    <p>The advantage offered by Cek.eЯ is providing fast tracking status. Simply input your tracking number, and you will immediately 
+                                    know the status of your package being shipped.</p>
+                    <p>Cek.eЯ is the result of a software engineering capstone project. It was developed by participants of the MSIB batch 5 
+                                    who were undertaking independent studies in the Revou batch of August 2023. The Jayapura J19 group consists of 5 students 
+                                    from different universities in Indonesia.</p>
+                </div>
+                <img src="./img/about2.avif" id="about-img" alt="gambar about">
+            </section>
 
-<!-- OUR TEAM -->
-        <section id="our team">
-            <div class="tengah">
-            <div class="kolom">
-            <h2>Team Jayapura J19</h2>
-            <div class="container-contact">
-                <!-- grid -->
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <div class="desc">
-                            <img src="./img/adel.png">
-                            <h3>Adelia Salsabila</h3>
-                            <a href="https://instagram.com/adesab27?igshid=NGVhN2U2NjQ0Yg==">
-                                <button class="button">Contact</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="desc">
-                            <img src="./img/balqist.png">
-                            <h3>Farah Balqist</h3>
-                            <a href="https://www.instagram.com/balqistsu/">
-                                <button class="button">Contact</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="desc">
-                            <img src="./img/mahadma.png">
-                            <h3>Mahadma Hutagalung</h3>
-                            <a href="https://wa.me/6281396204464">
-                                <button class="button">Contact</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="desc">
-                            <img src="./img/fadli.png">
-                            <h3>Muhammad Fadli Al-Thariq</h3>
-                            <a href="https://www.instagram.com/fadli_at/">
-                                <button class="button">Contact</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="desc">
-                            <img src="./img/zainudin.png" width="50px" height="50px">
-                            <h3>Zainudin Kairoty</h3>
-                            <a href="https://instagram.com/zainudin_2k2?igshid=MzMyNGUyNmU2YQ==">
-                                <button class="button">Contact</button>
-                            </a>
+            <!-- OUR TEAM -->
+            <section id="our team">
+                <div class="tengah">
+                    <div class="kolom">
+                        <h2>Team Jayapura J19</h2>
+                        <div
+                            class="container-contact">
+                            <!-- grid -->
+                            <div class="grid-container">
+                                <div class="grid-item">
+                                    <div class="desc">
+                                        <img src="./img/adel.png">
+                                        <h3>Adelia Salsabila</h3>
+                                        <a href="https://instagram.com/adesab27?igshid=NGVhN2U2NjQ0Yg==">
+                                            <button class="button">Contact</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="desc">
+                                        <img src="./img/balqist.png">
+                                        <h3>Farah Balqist</h3>
+                                        <a href="https://www.instagram.com/balqistsu/">
+                                            <button class="button">Contact</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="desc">
+                                        <img src="./img/mahadma.png">
+                                        <h3>Mahadma Hutagalung</h3>
+                                        <a href="https://instagram.com/ma_hadma?igshid=OGQ5ZDc2ODk2ZA==">
+                                            <button class="button">Contact</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="desc">
+                                        <img src="./img/fadli.png">
+                                        <h3>Muhammad Fadli Al-Thariq</h3>
+                                        <a href="https://www.instagram.com/fadli_at/">
+                                            <button class="button">Contact</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="desc">
+                                        <img src="./img/zainudin.png" width="50px" height="50px">
+                                        <h3>Zainudin Kairoty</h3>
+                                        <a href="https://instagram.com/zainudin_2k2?igshid=MzMyNGUyNmU2YQ==">
+                                            <button class="button">Contact</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-            </div>
-        </section>
+            </section>
 
-<!-- PARTNERS -->
-        <section id="partners">
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Partners</h2>
-                </div>
-                <div class="gambar1">
+            <!-- PARTNERS -->
+            <section id="partners">
+                <div class="tengah">
+                    <div class="kolom">
+                        <h2>Partners</h2>
+                    </div>
+                    <div class="gambar1">
                         <div class="kartu-partner">
                             <img src="./img/UNPATTI.png" alt="unpatti">
                         </div>
@@ -200,26 +202,34 @@
                         <div class="kartu-partner">
                             <img src="./img/REVOU.jpg" alt="Revou">
                         </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
 
-<!-- FOOTER -->
-    <footer class="main-footer" id="footer">
-        <div class="footer-top flex">
-            <div class="content flex" id="content-footer">
-                <div class="footer1">
+        <!-- FOOTER -->
+        <footer class="main-footer" id="footer">
+            <div class="footer-top flex">
+                <div class="content flex" id="content-footer">
+                    <div class="footer1">
                         <img src="./img/Logo2.png" alt="logo">
                         <p>Copyrights © 2023 Cek.eЯ by MSIB Revou participant August 2023 batch from Jayapura  team J19</p>
-                        <a href="#"><i class="fa-solid fa-email"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#">
+                            <i class="fa-solid fa-email"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>

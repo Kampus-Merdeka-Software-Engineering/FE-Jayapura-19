@@ -93,7 +93,6 @@ h2 {
     line-height: 10px;
     padding: 10px;
 }
-
 .container{
     background-color: #ffffff;
 }
@@ -111,10 +110,8 @@ h3{
     color: #dc6c3a;
 }
 .cek ul{
-    margin: 10px 0;}
-/* .cek ul li:where (input, select){
-
-    } */
+    margin: 10px 0;
+}
 .cek ul li{
     margin: auto;
     display:flex;
@@ -146,60 +143,6 @@ h3{
 }
 
 /* komentar */
-
-/* .komentar{
-	background: var(--white);
-	padding: 2rem;
-	max-width: 576px;
-	border-radius: .75rem;
-	box-shadow: var(--shadow);
-	margin: auto;
-}
-
-.kolom .komentar h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-	margin-bottom: 1rem;
-}
-
-textarea {
-	width: 90%;
-	background: var(--light);
-	padding: 1rem;
-	border-radius: .5rem;
-	border: none;
-	outline: none;
-	resize: none;
-	margin-bottom: .5rem;
-}
-.komentar .btn-group {
-	display: flex;
-	grid-gap: .5rem;
-}
-.btn-group .btn {
-	padding: .75rem 1rem;
-	border-radius: .5rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	font-size: .875rem;
-	font-weight: 500;
-}
-.btn-group .btn.submit {
-	background: var(--yellow-d-1);
-	color: var(--white);
-}
-.btn-group .btn.submit:hover {
-	background: var(--yellow);
-}
-.btn-group .btn.cancel {
-	background: var(--white);
-	color: var(--yellow);
-}
-.btn-group .btn.cancel:hover {
-	background: var(--light);
-} */
-
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -219,7 +162,6 @@ textarea {
 .comment h3{
     padding: 20px;
 }
-
 #comment-list {
     border: 1px solid #ccc;
     padding: 10px;
@@ -227,7 +169,6 @@ textarea {
     max-height: 300px;
     overflow-y: scroll;
 }
-
 #comment-form input,
 #comment-form textarea{
     width: 100%;
@@ -237,7 +178,6 @@ textarea {
 #comment-form button {
     margin: 20px;
 }
-
 #submit-button {
     background: var(--yellow-d-1);
 	color: var(--white);
@@ -245,11 +185,9 @@ textarea {
     padding: 10px 20px;
     cursor: pointer;
 }
-
 #submit-button:hover {
     background: var(--yellow);
 }
-
 
 /* Tentang/about */
 p{
@@ -262,8 +200,8 @@ p{
     flex-wrap: wrap;
     padding: 20px;
 }
-/* our team */
 
+/* our team */
 .grid-container{
     display: grid;
     column-gap: 50px;
@@ -273,7 +211,6 @@ p{
     grid-template-columns: repeat(3,1fr);
 
 }
-
 .grid-item{
     background-color: #dc6c3a;
     border: 3px;
@@ -290,7 +227,6 @@ p{
     transform: scale(1.1);
     
 }
-
 .grid-item img{
     border-radius: 5px;
     /* responsive */
@@ -301,14 +237,12 @@ p{
     margin-left: auto;
     margin-right: auto; 
 }
-
 .desc{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     color: white;
 }
-
 .button{
     border-radius: 10px;
     border: none;
@@ -341,8 +275,8 @@ p{
     justify-content: center;
     gap: 20px;
 }
-/* footer */
 
+/* footer */
 .footer1{
     background-color: rgb(175, 67, 5);
     color: #fff;
@@ -353,14 +287,12 @@ p{
     flex-wrap: wrap;
 
 }
-
 .footer1 img{
     width: 80px;
     height: 40px;
     display: flex;
     padding-bottom: 0%;
 } 
-
 .footer1 a{
     color: #FFF;
     margin: 8px;
@@ -369,7 +301,6 @@ p{
     text-align: center;
     padding-top: 0%;
 }
-
 
 /* responsif */
 @media screen and (max-width: 991.98px){
@@ -407,7 +338,6 @@ p{
     .grid-container{
         grid-template-columns: repeat(2, 1fr);
     }
-
 } 
 @media screen and (max-width: 768px) {
     #about img, #home img{
