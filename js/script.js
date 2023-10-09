@@ -50,7 +50,7 @@ function submitComment(event){
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            name: name.value,
+            nama: name.value,
             komen: comment.value,
         }),
     })
