@@ -39,24 +39,23 @@ function cekResi(event) {
 
 // SUBMIT KOMENTAR
 
-
-function submitComment(event){
-    const name = document.querySelector("#name");
+function submitComment(event) {
+    const nama = document.querySelector("#name");
     const comment = document.querySelector("#comment");
-    
+
     fetch(`${BASE_URL}/store-komen`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            nama: name.value,
+            nama: nama.value,
             komen: comment.value,
         }),
     })
     .then((response) => response.json())
     .then((response) => {
-
+        alert("Comment successfully sent!")
         console.log(response);
     })
     .catch((error) => {
