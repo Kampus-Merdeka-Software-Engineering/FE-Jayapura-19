@@ -24,14 +24,44 @@ function cekResi(event) {
     fetch(`${BASE_URL}/get-paket-by-resi?resi=${trackingNumber}`)
         .then((response) => response.json())
         .then((response) => {
-            console.log(response);
-        })
+            if(response.data.length > 0) {
+                document.querySelector("#content-no-resi").innerHTML = response.data[0].resi;
+                document.querySelector("#content-tanggal-pengiriman").innerHTML = response.data[0].tanggal;
+                document.querySelector("#content-penerima").innerHTML = response.data[0].penerima;
+                document.querySelector("#content-status").innerHTML = response.data[0].status;
+            }else{
+                alert("Tracking number not found.")}
+            })
         .catch((error) => {
             console.error(error);
         });
 }
 
 // SUBMIT KOMENTAR
+
+
+function submitComment(event){
+    const name = document.querySelector("#name");
+    const comment = document.querySelector("#comment");
+    
+    fetch(`${BASE_URL}/store-komen`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            name: name.value,
+            komen: comment.value,
+        }),
+    })
+    .then((response) => response.json())
+    .then((response) => {
+        console.log(response);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const commentForm = document.getElementById("comment-form");
