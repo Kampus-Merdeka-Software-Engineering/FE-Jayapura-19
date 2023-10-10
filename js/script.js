@@ -43,6 +43,11 @@ function submitComment(event) {
     const nama = document.querySelector("#name");
     const comment = document.querySelector("#comment");
 
+    if (nama.value.trim() === '' || comment.value.trim() === '') {
+        alert("Nama dan komentar harus diisi!");
+        return; // Menghentikan pengiriman jika salah satu kolom kosong
+    }
+
     fetch(`${BASE_URL}/store-komen`, {
         method: "POST",
         headers: {
