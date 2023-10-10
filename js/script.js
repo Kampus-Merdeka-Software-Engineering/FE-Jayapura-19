@@ -44,7 +44,7 @@ function submitComment(event) {
     const comment = document.querySelector("#comment");
 
     if (nama.value.trim() === '' || comment.value.trim() === '') {
-        alert("Nama dan komentar harus diisi!");
+        alert("Name and comment must be filled in!");
         return; // Menghentikan pengiriman jika salah satu kolom kosong
     }
 
